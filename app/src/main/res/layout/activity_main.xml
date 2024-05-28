@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/background_color"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/studentId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Student ID"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="16dp"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/studentName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Student Name"
+        android:layout_marginBottom="16dp"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/studentSemGrade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Student Semester Grade"
+        android:layout_marginBottom="16dp"
+        android:inputType="text" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/addRecord"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Add Record"
+            android:layout_marginEnd="8dp"
+            app:strokeColor="@color/button_stroke_color"
+            app:strokeWidth="2dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/deleteRecord"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Delete Record"
+            android:layout_marginEnd="8dp"
+            app:strokeColor="@color/button_stroke_color"
+            app:strokeWidth="2dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/editRecord"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Edit Record"
+            android:layout_marginEnd="8dp"
+            app:strokeColor="@color/button_stroke_color"
+            app:strokeWidth="2dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/viewRecord"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="View Record"
+            app:strokeColor="@color/button_stroke_color"
+            app:strokeWidth="2dp"/>
+
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/viewAllRecord"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View All Records"
+        app:strokeColor="@color/button_stroke_color"
+        app:strokeWidth="2dp"/>
+
+</LinearLayout>
